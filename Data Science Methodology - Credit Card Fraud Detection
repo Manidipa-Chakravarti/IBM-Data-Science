@@ -1,0 +1,40 @@
+Topic chosen is use of data science to build a model that proactively detects credit card frauds. Proactive  fraud detection in banking
+is essential for providing security to its customers. Sooner the bank detects the fraud, faster it can block the card. 
+
+Demo of Business Understanding stage by coming up with a problem that you would like to solve and phrasing it in the form of a question 
+that you will use data to answer. 
+1.  In today's world we use plastic money - credit cards daily for convenience. However a lot of fraudulent transactions are also done 
+    via phishing, skimming. Of course the customer comes to know when fraudulent transaction is done, but often it is too late and a tedious 
+    process to prove that it was a fraud to the banking company. It would be beneficial if the frauds can be prevented at first stage itself. 
+    This includes modelling past credit card transactions with the knowledge of fraud ones
+2.  Can bank determine automatically whether a transaction was genuine or a fraudulent one. A good example of an efficient fraud detection 
+    is when some high amount transactions occur and bank's fraud detection setup puts the transaction on hold until the customer confirms the
+    transaction, say via an otp.  
+ 
+Briefly explain how you would complete each of the following stages for the problem that you described in the Business Understanding stage:
+
+Analytic Approach
+Data Requirements
+Data Collection
+Data Understanding and Preparation
+Modeling and Evaluation
+You can always refer to the labs as a reference with describing how you would complete each stage for your problem.
+
+1. Analytic Approach:
+Here we are trying to automate the identification of credit card transaction whether it is genuine or fraudulent. For this we can consider having a data set of credit card transactions with features like monetary value, time of transaction. Let us build a decision tree considering the time and value of transaction. However this is not enough for a correct prediction of whether the transaction was a fraud or a genuine one. We would also need additional features in data like the IP of the device from which transaction was made, for example if the transaction is done at night time, have high value and from a different IP than that of regular one it is most likely to be a fraud transaction.
+
+2.Data Requirements
+Identify the required data set. Examining the data set we have already we found it had 99.5% of genuine transactions and only 0.5% of fraudulent transactions. If we would use this data set of training it would be skewed towards genuine transactions. Here we don't want to achieve 99% accuracy in determining genuine transactions instead we want higher accuracy in determining the fraud ones. Accuracy is not a correct measure of efficiency in our case.So now we have to prepare the data in a way to get the desired outcome. We may consider to use random under sampling to create a training data set with a balanced class distribution that will force the algorithms to detect fraudulent transactions as such to achieve high performance.
+
+3. Data Collection
+Here we assess the data requirements and decide whether we need more data. The data set is highly skewed, consisting of 492 frauds in a total of 284,807 observations. This resulted in only 0.172% fraud cases.We definitely need more data on particularly the fraudulent transactions. Owing to such imbalance in data, an algorithm that does not do any feature analysis and predicts all the transactions as non-frauds will also achieve an accuracy of 99.828%. Therefore, accuracy is not a correct measure of efficiency in our case. We need some other standard of correctness while classifying transactions as fraud or non-fraud. We might consider at this point to collect more data regarding fraudulent transactions, but in real world this may not be possible as there might be very less data for fraudulent transactions. Till that we will try to keep working with existing data set
+
+4. Data Understanding and Preparation
+To create our balanced training data set, we can take all of the fraudulent transactions in our data set and count them. Then, we can randomly selected the same number of genuine transactions and concatenated the two. After shuffling this newly created data set, we output the class distributions once more to visualise the difference. This time we were able to detect more features for the predictor model.
+
+5. Modeling and Evaluation
+One approach to gauge the compute model’s correctness is to use Accuracy as the deciding parameter. But, as stated earlier, in a highly skewed data set like this, we know that even if we predict all values as non-fraudulent, we’ll have only 492 wrong predictions out of 284,807 in total. So, the accuracy is excellent, but it still doesn’t solve our problem as we want to identify as many fraud cases as possible. So, we can’t use accuracy as a deciding factor here. We can consider different attributes to classify a transaction as genuine or legitimate.
+MSE: Mean Squared Error
+RMSE: Root Mean Squared Error
+MAE: Mean Absolute Errors
+RMSLE: Root Mean Squared Log Error
