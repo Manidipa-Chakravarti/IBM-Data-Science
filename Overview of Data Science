@@ -1,0 +1,54 @@
+Introduce yourself and share with your peers your background and any experience you have with data science. 
+
+I am Manidipa and a Procurement professional working as a SAP consultant for a Consumer Products major.  
+In today's date the daily procurement solutions are getting an "Intelligent" makeover. Never had the direct exposure to Data science in my daily job. 
+However when i started to read some interesting market insights on my current client, a question popped up in my head "Can i use these insights to predict 
+something useful, meaningful?". 
+Example: I came to know from my readings that in mature markets the origin of the ingredients has a great influence on the product sales.
+Today's consumer is environmentally aware and gets driven by organic buzz words on the label, like Sulfate and Parabens free, Not tested on animals,
+single origin ingredients usage and so on.
+
+How would you define a data scientist and data science? (3 marks)
+
+A Data Scientist is one who:
+- Finds solutions to problems
+-By analyzing data which might be big or small using appropriate tools
+-Narrates a story to communicate the finds to relevant people
+The key behavioral ingredients in a Data Scientist would be Curiosity, Sense of Humor, Story telling acumen.
+
+Data Science
+- In its simplest form is what Data Scientists do.
+It is the field where in you
+- Collect data (structured and unstructured)
+- Store Data (Profile the data) so that it is easily accessible 
+- Analyse date (using scientific methods for example Regression)
+- Extract insights from data
+- Narrate your valuable findings in an understandable way to concerned people
+
+
+Data science can be applied to problems across different industries. What industry are you passionate about and would like to pursue a data science career in? 
+
+I am passionate about pursuing a Data Science career In the Supply Chain industry. My main area of interest in Supply Chain analytics. 
+However i feel Data Science basics is a precursor to making Data driven (informed) business decision. I came to know from my readings that in mature markets 
+the origin of the ingredients has a great influence on the product sales, Today's consumer is environmentally aware and gets driven by organic buzz words on 
+the label, like Sulfate and Parabens free, Not tested on animals, Single origin ingredients usage and so on. It would be great to forecast using data science, 
+the sale volumes of consumer products based on these market trends data.
+
+What are the eight main components of a report that would be delivered at the end of a data science project? 
+
+Data Science report project structure would consist of the following sections:
+1. Cover Page: Should include title of the report, Authors - their affiliations and contacts, Affiliated publisher, Date of publication 
+2. Table of contents - which should index the contents of the report like a visual map
+3. Executive Summary or abstract - to explain the crux of our arguments
+4. Introductory Section: Useful for setting up the problem for a novice to the topic, who might need a subtle introduction before getting into the details. 
+   Review of available research on the subject. Literature Review: It can be concise with citations for only most influential subject authors when majority 
+   conclusions are in one direction . However cite the relevant research done if the arguments are new with plenty of deviation from current normal. 
+   To highlight the gaps that your analysis fills in the existing knowledge.
+5. Methodology section: refer to the research methods and data sources used for our analysis. Sometimes the right data set might not be available, so it might
+   have required surveys and questions which can be explained in detail 
+6. Results section: Showing our empirical findings in form of descriptive statistics and illustrative graphics. Then move toward testing your hypothesis
+7. Discussion Section: Rely on your narrative power to enable numbers to communicate your thesis to the readers. You highlight how your findings provide the 
+   missing piece to the puzzle
+8. Conclusion Section: Where we generalize our findings and give a marketing touch to promote them. We also mention future possible developments and 
+   application possible from our research. Finally References, Acknowledgement and Appendices.
+
